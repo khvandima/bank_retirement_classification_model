@@ -94,51 +94,62 @@ bank-retirement-classification/
 This project uses tox to standardize all workflows.
 
 Run full test suite and code checks
-
+```
 tox
+```
 This executes:
+* model training
+* unit tests (pytest)
+* code quality checks (flake8, isort, black, mypy)
 
-model training
-unit tests (pytest)
-code quality checks (flake8, isort, black, mypy)
 Train model only
-
+```
 tox -e train
+```
+
 Run package tests only
-
+```
 tox -e test_package
-🧪 Testing
+```
 
+
+🧪 Testing
 Unit tests validate:
-feature engineering logic
-prediction pipeline behavior
-consistency of outputs
-Tests are deterministic and reproducible
-Training is executed as part of the test environment
+* feature engineering logic
+* prediction pipeline behavior
+* consistency of model outputs
+Tests are deterministic and reproducible. Model training is executed as part of the test environment.
+
+
 📦 Build Package
 
 After tests pass, build distributable artifacts:
-
+```
 python3 -m build
+```
+
 This creates:
+* .whl (wheel)
+* .tar.gz (source distribution) Artifacts are placed in the dist/ directory.
 
-.whl (wheel)
-.tar.gz (source distribution) Artifacts are placed in the dist/ directory.
-🧠 Why This Structure Matters This repository demonstrates:
 
-separation of concerns (data / features / training / inference)
-testable ML code
-reproducible experiments
-readiness for CI/CD integration
-transition from research code to production-ready package
+🧠 Why This Structure Matters
+This repository demonstrates:
+* separation of concerns (data / features / training / inference)
+* testable and maintainable ML code
+* reproducible experiments
+* readiness for CI/CD integration
+* transition from research-oriented ML to a production-ready package
+
 📌 Intended Audience
+* ML Engineers
+* Data Scientists working with financial data
+* Teams interested in production ML and MLOps foundations
+* Recruiters reviewing real-world ML engineering work
 
-ML Engineers
-Data Scientists moving toward production ML
-Teams interested in MLOps foundations
-Recruiters reviewing real-world ML engineering work
-🚧 Project Status The package is stable and fully functional. Future extensions may include:
-
-experiment tracking
-model versioning
-deployment examples (API / batch inference)
+🚧 Project Status
+The package is stable and fully functional.
+Possible future extensions:
+* advanced model explainability (SHAP)
+* probability calibration
+* deployment examples (API / batch inference)
