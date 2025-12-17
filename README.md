@@ -130,7 +130,8 @@ python3 -m build
 
 This creates:
 * .whl (wheel)
-* .tar.gz (source distribution) Artifacts are placed in the dist/ directory.
+* .tar.gz (source distribution)    
+Artifacts are placed in the dist/ directory.
 
 
 🧠 Why This Structure Matters
