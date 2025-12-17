@@ -1,7 +1,10 @@
-🏦 Bank Retirement Classification
-Production-Ready Machine Learning Package
+🏦 Bank Retirement Classification.    
+
+Production-Ready Machine Learning Package.
+
 This repository contains a production-ready machine learning package for bank retirement classification.
 The project demonstrates how a classical applied ML problem in the banking / finance domain can be implemented as a maintainable, testable, and distributable Python package, following software engineering and MLOps-oriented best practices.
+
 Key focus areas:
 * clean and modular project structure
 * reproducible and deterministic training
