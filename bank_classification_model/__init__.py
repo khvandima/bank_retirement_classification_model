@@ -1,11 +1,7 @@
 import logging
-import sys
 
 from bank_classification_model.config.core import PACKAGE_ROOT, config
 
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Bank_retirement"
-)
 
 logging.getLogger(config.app_config.package_name).addHandler(logging.NullHandler())
 

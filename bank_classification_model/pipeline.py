@@ -1,15 +1,9 @@
-import sys
-
 from sklearn.experimental import enable_iterative_imputer  # noqa: F401
 from sklearn.impute import IterativeImputer
 from sklearn.pipeline import Pipeline
 from xgboost import XGBClassifier
 
 from bank_classification_model.config.core import config
-
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Bank_retirement"
-)
 
 
 bank_pipe = Pipeline(

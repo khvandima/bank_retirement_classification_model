@@ -1,5 +1,4 @@
 import logging
-import sys
 from typing import List
 
 import joblib
@@ -9,9 +8,6 @@ from sklearn.pipeline import Pipeline
 from bank_classification_model import __version__ as _version
 from bank_classification_model.config.core import DATASET_DIR, TRAINED_MODEL_DIR, config
 
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Bank_retirement"
-)
 
 logger = logging.getLogger(__name__)
 

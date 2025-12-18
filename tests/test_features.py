@@ -1,10 +1,4 @@
-import sys
-
 from bank_classification_model.config.core import config
-
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Bank_retirement"
-)
 
 
 def test_features_exist(sample_input_data):

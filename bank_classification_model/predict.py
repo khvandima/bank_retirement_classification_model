@@ -1,4 +1,3 @@
-import sys
 import typing as t
 
 import pandas as pd
@@ -8,9 +7,6 @@ from bank_classification_model.config.core import config
 from bank_classification_model.processing.data_manager import load_pipeline
 from bank_classification_model.processing.validation import validate_inputs
 
-sys.path.append(
-    "/Users/khvandima/Documents/Programming/KS_AI_JLR_18/ml_practice/Bank_retirement/"
-)
 
 pipeline_file_name = f"{config.app_config.pipeline_save_file}{_version}.pkl"
 
